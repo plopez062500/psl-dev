@@ -9,6 +9,13 @@
 				'bg-white text-blue-500 border-blue-500 hover:text-white hover:bg-blue-500 border border-blue-500',
 			ghost: 'bg-white text-blue-500 border-blue-500 hover:text-white hover:bg-blue-500'
 		},
+		dark_blue: {
+			filled:
+				'bg-blue-900 text-white border-blue-900 hover:text-blue-900 hover:bg-white border border-blue-900',
+			outline:
+				'bg-white text-blue-900 border-blue-900 hover:text-white hover:bg-blue-900 border border-blue-900',
+			ghost: 'bg-white text-blue-900 border-blue-900 hover:text-white hover:bg-blue-900'
+		},
 		red: {
 			filled:
 				'bg-red-500 text-white border-red-500 hover:text-red-500 hover:bg-white border border-red-500',
@@ -61,13 +68,13 @@
 		dispatch('click', event.detail);
 	}
 
-    $: misc_props = $$props;
+	$: misc_props = $$props;
 </script>
 
 <button
 	class={`${sizes[size]} ${colors[color][variant]} transition-all rounded-sm h-fit`}
 	class:w-full={full_width}
 	on:click={on_click}
-    {...misc_props}
+	{...misc_props}
 	><slot />
 </button>

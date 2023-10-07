@@ -20,11 +20,8 @@
 				full_width
 			/>
 
-            <Button>Send Message</Button>
+            <Button color='dark_blue'>Send Message</Button>
 		</form>
-
-		<!-- <p class="text-blue-950">Email: plopez062500@gmail.com</p>
-		<p class="text-blue-950">Phone: 270-832-1066</p> -->
 	</div>
 </div>
 

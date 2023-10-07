@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
-	import { slide, crossfade, fade, fly, draw } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 
 	let show_landing = false;
 	let resume_button_active = false;
@@ -85,11 +85,8 @@
 	</div>
 {/if}
 
-<div class="absolute left-0 right-0 top-[60%] m-auto -z-10 ">
-	<svg
-		width="100%"
-		height="436.68123"
-		viewBox="0 0 1019.4842 436.68123"
+<div class="absolute left-0 right-0 top-[60%] m-auto -z-10">
+	<svg width="100%" height="436.68123" viewBox="0 0 1019.4842 436.68123"
 		><path
 			d="M314.02808,475.27364a9.75072,9.75072,0,1,0-19.40734,1.28194l-28.01439,36.68607a13.58254,13.58254,0,0,0,1.83575,14.91417l2.19759,2.56354,10.083-2.01667,11.42794-10.08331L290.806,507.19164l14.1167-22.18324-.01825-.01592A9.74283,9.74283,0,0,0,314.02808,475.27364Z"
 			transform="translate(-90.2579 -231.65939)"
